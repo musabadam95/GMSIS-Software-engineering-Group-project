@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="940.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavafxGUI.SRCMainCon">
+   <children>
+      <TabPane layoutY="-1.0" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-1.0">
+        <tabs>
+          <Tab text="SRC Parts">
+               <content>
+                  <AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="940.0">
+                      <children>
+                          <SplitPane dividerPositions="0.2086021505376344" orientation="VERTICAL" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                              <items>
+                              <AnchorPane id="AnchorPane" minHeight="93.0" minWidth="500.0" prefHeight="93.0" prefWidth="938.0">
+                                 <children>
+                                          <Label layoutX="14.0" layoutY="14.0" text="Search:" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="14.0" />
+                                          <TextField fx:id="searchTxtP" layoutX="68.0" layoutY="9.0" prefHeight="27.0" prefWidth="200.0" AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="10.0" />
+                                    <Label layoutX="288.0" layoutY="15.0" text="Search in SRC:" AnchorPane.leftAnchor="288.0" AnchorPane.topAnchor="15.0" />
+                                    <ComboBox fx:id="searchInSRCComboP" layoutX="388.0" layoutY="9.0" onAction="#searchInSRCCombo" prefHeight="27.0" prefWidth="200.0" AnchorPane.leftAnchor="390.0" AnchorPane.topAnchor="10.0" />
+                                    <Label layoutX="610.0" layoutY="15.0" text="Return Query:" AnchorPane.leftAnchor="610.0" AnchorPane.topAnchor="15.0" />
+                                    <ComboBox fx:id="ReturnQueryComboP" layoutX="715.0" layoutY="9.0" onAction="#ReturnQueryComboP" prefHeight="27.0" prefWidth="200.0" AnchorPane.leftAnchor="720.0" AnchorPane.topAnchor="10.0" />
+                                          <Button fx:id="addPartBt" layoutX="21.0" layoutY="50.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" text="Add Part" />
+                                          <Button fx:id="editPartBt" layoutX="119.0" layoutY="47.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" text="Edit" />
+                                          <Button fx:id="deletePartBt" layoutX="216.0" layoutY="47.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" text="Delete" />
+                                          <Button fx:id="RefreshBt" layoutX="310.0" layoutY="47.0" mnemonicParsing="false" onAction="#RefreshBt" prefHeight="30.0" prefWidth="80.0" text="Refresh" />
+                                    <Button fx:id="custDetailsbtn" layoutX="796.0" layoutY="49.0" mnemonicParsing="false" onAction="#viewCustDetails" text="Customer Details" />
+                                 </children>
+                              </AnchorPane>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="297.0" prefWidth="888.0">
+                                      <children>
+                                              <TableView fx:id="partsTable" fixedCellSize="-0.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="364.0" prefWidth="938.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                  <columnResizePolicy>
+                                                      <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                                  </columnResizePolicy>
+                                                  <columns>
+                                                      <TableColumn fx:id="partIDCol" onEditCommit="#RefreshBt" prefWidth="46.0" text="Part ID" />
+                                                      <TableColumn fx:id="partNCol" prefWidth="74.0" text="Part Name" />
+                                                      <TableColumn fx:id="partDesCol" prefWidth="46.0" text="Description" />
+                                                      <TableColumn fx:id="partVehRegCol" prefWidth="131.0" text="Vehicle Registration" />
+                                                      <TableColumn fx:id="partsRCCostCol" prefWidth="89.0" text="SRC Cost" />
+                                                      <TableColumn fx:id="partExpSenCol" prefWidth="46.0" text="Date Sent To SRC" />
+                                                      <TableColumn fx:id="partExpReturnCol" prefWidth="46.0" text="Date Return From SPC" />
+                                          <TableColumn fx:id="partSRCCol" prefWidth="46.0" text="SRC" />
+                                                  </columns>
+                                              </TableView>
+                                      </children>
+                                  </AnchorPane>
+                              </items>
+                          </SplitPane>
+                      </children>
+                  </AnchorPane>
+               </content>
+          </Tab>
+          <Tab text="SRC Vehicles">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <SplitPane dividerPositions="0.2086021505376344" orientation="VERTICAL" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <items>
+                              <AnchorPane id="AnchorPane" minHeight="93.0" minWidth="500.0" prefHeight="93.0" prefWidth="938.0">
+                                 <children>
+                                    <Label layoutX="14.0" layoutY="14.0" text="Search:" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="14.0" />
+                                    <TextField fx:id="searchTxtV" layoutX="68.0" layoutY="9.0" prefHeight="27.0" prefWidth="200.0" AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="10.0" />
+                                    <Label layoutX="288.0" layoutY="15.0" text="Search in SRC:" AnchorPane.leftAnchor="288.0" AnchorPane.topAnchor="15.0" />
+                                    <ComboBox fx:id="searchInSRCComboV" layoutX="388.0" layoutY="9.0" onAction="#searchInSRCCombo" prefHeight="27.0" prefWidth="200.0" AnchorPane.leftAnchor="390.0" AnchorPane.topAnchor="10.0" />
+                                    <Label layoutX="610.0" layoutY="15.0" text="Return Query:" AnchorPane.leftAnchor="610.0" AnchorPane.topAnchor="15.0" />
+                                    <ComboBox fx:id="ReturnQueryComboV" layoutX="715.0" layoutY="9.0" prefHeight="27.0" prefWidth="200.0" AnchorPane.leftAnchor="720.0" AnchorPane.topAnchor="10.0" />
+                                    <Button fx:id="addVehBt" layoutX="15.0" layoutY="49.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="93.0" text="Add Vehicle" />
+                                    <Button fx:id="editVehBt" layoutX="119.0" layoutY="47.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" text="Edit" />
+                                    <Button fx:id="deleteVehBt" layoutX="216.0" layoutY="47.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" text="Delete" />
+                                    <Button fx:id="RefreshBtV" layoutX="310.0" layoutY="48.0" mnemonicParsing="false" onAction="#RefreshBt" prefHeight="30.0" prefWidth="80.0" text="Refresh" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="-50.0" right="-450.0" />
+                                 </padding>
+                              </AnchorPane>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="360.0" prefWidth="938.0">
+                                 <children>
+                                    <TableView fx:id="vehicleTable" fixedCellSize="-0.0" prefHeight="149.0" prefWidth="442.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <columnResizePolicy>
+                                          <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                       </columnResizePolicy>
+                                       <columns>
+                                          <TableColumn fx:id="vehRegCol" prefWidth="46.0" text="Vehicle registration" />
+                                          <TableColumn fx:id="typeCol" prefWidth="74.0" text="Type" />
+                                          <TableColumn fx:id="modelCol" prefWidth="46.0" text="Model" />
+                                          <TableColumn fx:id="makeCol" prefWidth="46.0" text="Make" />
+                                          <TableColumn fx:id="engSizeCol" prefWidth="46.0" text="Engine Size" />
+                                          <TableColumn fx:id="vehSRCCostCol" prefWidth="46.0" text="SRC Cost" />
+                                          <TableColumn fx:id="vehExpSendCol" prefWidth="46.0" text="Date Sent To SRC" />
+                                          <TableColumn fx:id="vehExpReturnCol" prefWidth="46.0" text="Date Return From SPC" />
+                                          <TableColumn fx:id="vehSRCCol" prefWidth="46.0" text="SRC" />
+                                          <TableColumn fx:id="CusNameCol" prefWidth="46.0" text="CustomerName " />
+                                       </columns>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                           </items>
+                        </SplitPane>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="SRC ">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <SplitPane dividerPositions="0.2086021505376344" orientation="VERTICAL">
+                           <items>
+                              <AnchorPane id="AnchorPane" minHeight="93.0" minWidth="500.0" prefHeight="93.0" prefWidth="938.0">
+                                 <children>
+                                    <Label layoutX="14.0" layoutY="14.0" text="Search:" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="14.0" />
+                                    <TextField fx:id="searchTxtS" layoutX="68.0" layoutY="9.0" prefHeight="27.0" prefWidth="200.0" AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="10.0" />
+                                    <Label layoutX="288.0" layoutY="15.0" text="Search in SRC:" AnchorPane.leftAnchor="288.0" AnchorPane.topAnchor="15.0" />
+                                    <ComboBox fx:id="searchInSRCComboS" layoutX="388.0" layoutY="9.0" onAction="#searchInSRCCombo" prefHeight="27.0" prefWidth="200.0" AnchorPane.leftAnchor="390.0" AnchorPane.topAnchor="10.0" />
+                                    <Label layoutX="610.0" layoutY="15.0" text="Return Query:" AnchorPane.leftAnchor="610.0" AnchorPane.topAnchor="15.0" />
+                                    <ComboBox fx:id="ReturnQueryComboS" layoutX="715.0" layoutY="9.0" prefHeight="27.0" prefWidth="200.0" AnchorPane.leftAnchor="720.0" AnchorPane.topAnchor="10.0" />
+                                    <Button fx:id="addSrcBt" layoutX="21.0" layoutY="50.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" text="Add SRC" />
+                                    <Button fx:id="editSrcBt" layoutX="119.0" layoutY="47.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" text="Edit" />
+                                    <Button fx:id="deleteSrcBt" layoutX="216.0" layoutY="47.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" text="Delete" />
+                                    <Button fx:id="RefreshBtS" layoutX="310.0" layoutY="48.0" mnemonicParsing="false" onAction="#RefreshBt" prefHeight="30.0" prefWidth="80.0" text="Refresh" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="-50.0" right="-450.0" />
+                                 </padding>
+                              </AnchorPane>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="360.0" prefWidth="938.0">
+                                 <children>
+                                    <TableView fx:id="srcTable" fixedCellSize="0.0" prefHeight="296.0" prefWidth="938.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <columnResizePolicy>
+                                          <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                       </columnResizePolicy>
+                                       <columns>
+                                          <TableColumn fx:id="srcIDCol" maxWidth="2000.0" minWidth="-Infinity" prefWidth="2000.0" text="ID" />
+                                          <TableColumn fx:id="srcNCol" prefWidth="140.0" text="SRC Name " />
+                                          <TableColumn fx:id="firstLineAddsCol" prefWidth="150.0" text="First Line Address " />
+                                          <TableColumn fx:id="secLineAddCol" prefWidth="130.0" text="Secund Line Address " />
+                                          <TableColumn fx:id="countyCol" prefWidth="120.0" text="County" />
+                                          <TableColumn fx:id="postCodeCol" maxWidth="4000.0" minWidth="-Infinity" prefWidth="3000.0" text="Post Code" />
+                                          <TableColumn fx:id="phoneNumberCol" prefWidth="110.0" text="Phone Number" />
+                                          <TableColumn fx:id="emailAddCol" prefWidth="100.0" text="Email Address" />
+                                       </columns>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                           </items>
+                        </SplitPane>
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

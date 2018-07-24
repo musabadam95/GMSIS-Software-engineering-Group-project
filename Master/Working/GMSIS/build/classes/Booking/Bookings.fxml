@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="940.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Booking.FXMLDocumentController">
+   <children>
+      <Pane layoutX="10.0" layoutY="10.0">
+         <children>
+            <Pane layoutX="840.0" layoutY="14.0" prefHeight="450.0" prefWidth="79.0">
+               <children>
+                  <VBox layoutY="14.0" spacing="30.0" />
+                  <VBox layoutX="1.0" layoutY="14.0" spacing="25.0">
+                     <children>
+                        <Button fx:id="addButton" mnemonicParsing="false" prefHeight="31.0" prefWidth="81.0" text="Add" />
+                        <Button fx:id="editButton" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" text="Edit" />
+                        <Button fx:id="deleteButton" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" text="Delete" />
+                        <Button fx:id="resetButton" mnemonicParsing="false" prefHeight="31.0" prefWidth="81.0" text="Reset" />
+                        <Button fx:id="saveButton" mnemonicParsing="false" prefHeight="31.0" prefWidth="81.0" text="Save" />
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+            <SplitPane orientation="VERTICAL" prefHeight="481.0" prefWidth="840.0">
+               <items>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="479.0" prefWidth="821.0" SplitPane.resizableWithParent="false">
+                     <children>
+                        <TableView fx:id="BookingsTable" editable="true" layoutX="10.0" layoutY="293.0" prefHeight="179.0" prefWidth="821.0">
+                          <columns>
+                            <TableColumn fx:id="colBName" prefWidth="71.0" text="Name" />
+                              <TableColumn fx:id="colBSurname" prefWidth="74.0" text="Surname" />
+                              <TableColumn fx:id="colBCusID" prefWidth="64.0" text="CusID" />
+                              <TableColumn fx:id="colBVehReg" minWidth="0.0" prefWidth="97.0" text="VehReg" />
+                            <TableColumn fx:id="colBMake" minWidth="0.0" prefWidth="69.0" text="Make" />
+                              <TableColumn fx:id="colBDate" minWidth="0.0" prefWidth="101.0" text="Date" />
+                              <TableColumn id="colBTime" fx:id="colBTime" prefWidth="72.0" text="Time" />
+                              <TableColumn fx:id="colBType" prefWidth="54.0" text="Type" />
+                              <TableColumn fx:id="colBDuration" minWidth="0.0" prefWidth="81.0" text="Duration" />
+                              <TableColumn fx:id="mechanicFX" text="Mechanic" />
+                              <TableColumn fx:id="bidFX" prefWidth="54.0" text="B.ID" />
+                          </columns>
+                        </TableView>
+                        <VBox layoutX="114.0" layoutY="8.0" spacing="10.0">
+                           <children>
+                              <TextField fx:id="fName" prefHeight="27.0" prefWidth="106.0" />
+                              <TextField fx:id="lName" prefHeight="31.0" prefWidth="108.0" />
+                              <TextField fx:id="vehRegBox" prefHeight="31.0" prefWidth="108.0" />
+                              <TextField fx:id="vehMakeBox" prefHeight="31.0" prefWidth="108.0" />
+                           </children>
+                        </VBox>
+                        <VBox layoutX="10.0" layoutY="13.0" spacing="20.0">
+                           <children>
+                              <Label text="First Name" />
+                              <Label text="Last Name" />
+                              <Label text="Vehicle Reg" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vehicle Make" />
+                           </children>
+                        </VBox>
+                        <Label layoutX="12.0" layoutY="183.0" text="Booking Type" AnchorPane.leftAnchor="12.0" AnchorPane.topAnchor="183.0" />
+                        <VBox layoutX="429.0" layoutY="13.0" spacing="20.0">
+                           <children>
+                              <Label text="Booking Date" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Booking Time" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Mileage" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Duration" />
+                           </children>
+                        </VBox>
+                        <VBox layoutX="530.0" layoutY="8.0" spacing="10.0">
+                           <children>
+                              <DatePicker fx:id="myDateSelector" />
+                              <ChoiceBox fx:id="TimeSelectBox" prefHeight="31.0" prefWidth="218.0" />
+                              <TextField fx:id="mileageBox" prefHeight="31.0" prefWidth="218.0" />
+                              <TextField fx:id="durBox" prefHeight="31.0" prefWidth="218.0" />
+                           </children>
+                        </VBox>
+                        <RadioButton fx:id="DiaRep" layoutX="115.0" layoutY="183.0" mnemonicParsing="false" text="Diagnosis and repair">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="Hello" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="SchMen" layoutX="115.0" layoutY="219.0" mnemonicParsing="false" text="System maintenance" toggleGroup="$Hello" />
+                        <Text layoutX="14.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                        <TextField fx:id="searchTxt" layoutX="530.0" layoutY="178.0" onAction="#updateTable" prefHeight="31.0" prefWidth="131.0" />
+                        <ChoiceBox id="Select" fx:id="searchType" layoutX="691.0" layoutY="178.0" prefHeight="31.0" prefWidth="115.0" />
+                        <Text layoutX="429.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search" />
+                     </children>
+                  </AnchorPane>
+               </items>
+            </SplitPane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

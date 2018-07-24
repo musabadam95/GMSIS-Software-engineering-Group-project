@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" minHeight="363.0" minWidth="500.0" prefHeight="447.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="specialist.AddVehController">
+   <children>
+      <Pane layoutX="111.0" layoutY="15.0" prefHeight="479.0" prefWidth="51.0" AnchorPane.bottomAnchor="-58.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="449.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ComboBox fx:id="CusComboBox" layoutX="167.0" layoutY="380.0" prefHeight="27.0" prefWidth="123.0" />
+            <Label layoutX="31.0" layoutY="384.0" text="Costomer ID:" />
+         </children></Pane>
+      <Label layoutX="37.0" layoutY="20.0" text="Vehicle registration:" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="20.0" />
+      <TextField fx:id="vehRegxx" layoutX="143.0" layoutY="14.0" AnchorPane.leftAnchor="170.0" AnchorPane.rightAnchor="500.0" AnchorPane.topAnchor="17.0" />
+      <Label layoutX="30.0" layoutY="102.0" text="Expected Send:" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="60.0" />
+      <DatePicker fx:id="vehExpSendDate" AnchorPane.leftAnchor="170.0" AnchorPane.topAnchor="57.0" />
+      <Label text="Expected Return:" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="100.0" />
+      <DatePicker fx:id="vehExpReturnDate" AnchorPane.leftAnchor="170.0" AnchorPane.topAnchor="97.0" />
+      <Label text="Type:" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="140.0" />
+      <TextField fx:id="typexx" layoutX="20.0" layoutY="20.0" AnchorPane.leftAnchor="170.0" AnchorPane.topAnchor="137.0" />
+      <Label layoutX="10.0" layoutY="10.0" text="Model:" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="180.0" />
+      <TextField fx:id="modelxx" layoutX="10.0" layoutY="10.0" AnchorPane.leftAnchor="170.0" AnchorPane.topAnchor="177.0" />
+      <Label text="Make:" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="220.0" />
+      <TextField fx:id="makexx" AnchorPane.leftAnchor="170.0" AnchorPane.topAnchor="217.0" />
+      <Label layoutX="10.0" layoutY="10.0" text="Engine Size:" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="260.0" />
+      <TextField fx:id="engSizexx" layoutX="10.0" layoutY="10.0" AnchorPane.leftAnchor="170.0" AnchorPane.topAnchor="257.0" />
+      <Label text="SRC Cost:" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="300.0" />
+      <TextField fx:id="vehSPCCostxx" AnchorPane.leftAnchor="170.0" AnchorPane.topAnchor="297.0" />
+      <Label text="SPC:" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="340.0" />
+      <ComboBox fx:id="vehComboBox" layoutX="170.0" layoutY="297.0" prefHeight="27.0" prefWidth="167.0" AnchorPane.leftAnchor="170.0" AnchorPane.topAnchor="337.0" />
+      <Button fx:id="vehSaveBt" maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" onAction="#vehSaveBt" prefHeight="40.0" prefWidth="70.0" text="Save" visible="false" AnchorPane.bottomAnchor="75.0" AnchorPane.rightAnchor="475.0" />
+      <Button fx:id="vehEditSaveBt" layoutX="10.0" layoutY="10.0" maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" onAction="#vehEditSaveBt" prefHeight="40.0" prefWidth="70.0" text="Save" visible="false" AnchorPane.bottomAnchor="75.0" AnchorPane.rightAnchor="475.0" />
+      <Button fx:id="vehCancelBt" layoutX="293.0" layoutY="320.0" mnemonicParsing="false" onAction="#vehCancelBt" prefHeight="40.0" prefWidth="70.0" text="Cancel" AnchorPane.bottomAnchor="75.0" AnchorPane.rightAnchor="575.0" />
+   </children>
+   <padding>
+      <Insets bottom="-50.0" right="-450.0" />
+   </padding>
+</AnchorPane>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" minHeight="363.0" minWidth="500.0" prefHeight="421.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavafxGUI.AddPartsController">
+   <children>
+      <Pane layoutX="111.0" layoutY="15.0" prefHeight="479.0" prefWidth="51.0" AnchorPane.bottomAnchor="-58.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="449.0" AnchorPane.topAnchor="0.0" />
+      <Label layoutX="37.0" layoutY="20.0" text="Part Name:" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="20.0" />
+      <Label layoutX="30.0" layoutY="102.0" text="Expected Send:" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="60.0" />
+      <Label text="Expected Return:" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="100.0" />
+      <Label text="Description:" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="140.0" />
+      <Label text="Vehicle Registration:" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="220.0" />
+      <Label text="SRC Cost:" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="260.0" />
+      <Label text="Part Name:" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="300.0" />
+      <TextField fx:id="part_name_txt" layoutX="143.0" layoutY="14.0" onAction="#src_name_txt" AnchorPane.leftAnchor="170.0" AnchorPane.rightAnchor="500.0" AnchorPane.topAnchor="17.0" />
+      <DatePicker fx:id="part_exp_sent_txt" AnchorPane.leftAnchor="170.0" AnchorPane.topAnchor="57.0" />
+      <DatePicker fx:id="part_exp_return_txt" AnchorPane.leftAnchor="170.0" AnchorPane.topAnchor="97.0" />
+      <TextArea fx:id="part_des_txt" layoutX="-242.0" layoutY="107.0" prefHeight="17.0" prefWidth="280.0" AnchorPane.bottomAnchor="265.0" AnchorPane.leftAnchor="170.0" AnchorPane.rightAnchor="500.0" AnchorPane.topAnchor="137.0" />
+      <TextField fx:id="part_vehreg_txt" onAction="#src_name_txt" AnchorPane.leftAnchor="170.0" AnchorPane.topAnchor="217.0" />
+      <TextField fx:id="part_src_cost_txt" onAction="#src_name_txt" AnchorPane.leftAnchor="170.0" AnchorPane.topAnchor="257.0" />
+      <ChoiceBox fx:id="parts_choicebox" prefHeight="27.0" prefWidth="167.0" AnchorPane.leftAnchor="170.0" AnchorPane.topAnchor="297.0" />
+      <Button fx:id="part_save" maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" onAction="#src_save" prefHeight="40.0" prefWidth="70.0" text="Save" AnchorPane.bottomAnchor="75.0" AnchorPane.rightAnchor="475.0" />
+      <Button fx:id="part_cancel" layoutX="293.0" layoutY="320.0" mnemonicParsing="false" onAction="#src_cancel" prefHeight="40.0" prefWidth="70.0" text="Cancel" AnchorPane.bottomAnchor="75.0" AnchorPane.rightAnchor="575.0" />
+   </children>
+   <padding>
+      <Insets bottom="-50.0" right="-450.0" />
+   </padding>
+</AnchorPane>

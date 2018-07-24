@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane prefHeight="697.0" prefWidth="807.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Customer.CustomerOverviewController">
+   <children>
+      <Label layoutX="57.0" layoutY="405.0" text="Vehicles owned:" />
+      <Label layoutX="446.0" layoutY="305.0" text="Vehicle Reg:" />
+      <Label layoutX="465.0" layoutY="372.0" text="Bookings:" />
+      <Label layoutX="462.0" layoutY="467.0" text="Parts used:" />
+      <TableView fx:id="CustomerTable" layoutX="4.0" layoutY="79.0" onSort="#setCustomerTable" prefHeight="218.0" prefWidth="803.0">
+         <columns>
+            <TableColumn fx:id="id" prefWidth="40.0" text="ID" />
+            <TableColumn fx:id="firstNameColumn" prefWidth="67.0" text="Firstname" />
+            <TableColumn fx:id="lastNameColumn" prefWidth="70.0" text="Lastname" />
+            <TableColumn fx:id="address1Column" prefWidth="72.0" text="Address 1" />
+            <TableColumn fx:id="address2Column" prefWidth="79.0" text="Address 2" />
+            <TableColumn fx:id="postcodeColumn" prefWidth="69.0" text="Post code" />
+            <TableColumn fx:id="phoneNumberColumn" prefWidth="76.0" text="Phone No" />
+            <TableColumn fx:id="emailColumn" minWidth="0.0" prefWidth="63.0" text="Email" />
+            <TableColumn fx:id="typeColumn" prefWidth="32.0" text="Type" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <ButtonBar layoutX="47.0" layoutY="298.0" prefHeight="40.0" prefWidth="200.0">
+         <buttons>
+            <Button fx:id="addBtn" mnemonicParsing="false" onAction="#handleAdd" text="Add" />
+            <Button fx:id="editBtn" mnemonicParsing="false" onAction="#handleEdit" text="Edit" />
+            <Button fx:id="accountBtn" disable="true" mnemonicParsing="false" onAction="#handleAccount" text="Account" />
+            <Button fx:id="deleteBtn" mnemonicParsing="false" onAction="#handleDeleteButton" text="Delete" />
+         </buttons>
+      </ButtonBar>
+      <TextField fx:id="searchField" layoutX="27.0" layoutY="33.0" onAction="#filter" promptText="Search" />
+      <ListView fx:id="vehiclesListView" layoutX="183.0" layoutY="347.0" prefHeight="132.0" prefWidth="200.0" />
+      <Label fx:id="vehicleLabel" layoutX="583.0" layoutY="306.0" />
+      <ListView fx:id="bookingsListView" layoutX="574.0" layoutY="342.0" prefHeight="86.0" prefWidth="200.0" />
+      <ListView fx:id="partsListView" layoutX="575.0" layoutY="438.0" prefHeight="86.0" prefWidth="200.0" />
+   </children>
+</Pane>

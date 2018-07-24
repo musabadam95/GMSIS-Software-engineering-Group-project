@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="customer_info_jp" max="32767" attributes="0"/>
+                  <Component id="vehicles_info_jp" alignment="0" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+              <Component id="customer_info_jp" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Component id="vehicles_info_jp" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="84" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="customer_info_jp">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder title="Customer Info"/>
+          </Border>
+        </Property>
+      </Properties>
+      <AccessibilityProperties>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value=""/>
+      </AccessibilityProperties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="Titlle_label" max="32767" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="Title_ComboBox" min="-2" pref="83" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="First_Name_Label" max="32767" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="First_Name_TextBox" linkSize="1" min="-2" pref="103" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="Middle_Name_Label" max="32767" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="Middle_Name_TextBox" linkSize="1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="Last_Name_Label" max="32767" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="Last_Name_TextBox" linkSize="1" min="-2" pref="124" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="Home_Address_Label" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel6" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="Home_Adrress2_TextBox" max="32767" attributes="0"/>
+                                      <Component id="Home_Adrress1_TextBox" max="32767" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="jLabel7" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel8" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="Phone_Nomber_TextBox" pref="132" max="32767" attributes="0"/>
+                                      <Component id="Email_Address_TextBox" max="32767" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="79" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <Component id="Post_Code_TextBox" min="-2" pref="80" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                  </Group>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="First_Name_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Middle_Name_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Last_Name_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Titlle_label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="First_Name_TextBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Middle_Name_TextBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Last_Name_TextBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Title_ComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="Home_Address_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Home_Adrress1_TextBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Phone_Nomber_TextBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="Home_Adrress2_TextBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel8" alignment="3" min="-2" pref="15" max="-2" attributes="0"/>
+                      <Component id="Email_Address_TextBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Post_Code_TextBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace pref="18" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="First_Name_Label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="First Name: "/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="Middle_Name_Label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Middle Name:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="Last_Name_Label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Last Name:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="Titlle_label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Title:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="First_Name_TextBox">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="First_Name_TextBoxActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JTextField" name="Middle_Name_TextBox">
+        </Component>
+        <Component class="javax.swing.JTextField" name="Last_Name_TextBox">
+        </Component>
+        <Component class="javax.swing.JLabel" name="Home_Address_Label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Home Adrress:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="Home_Adrress2_TextBox">
+        </Component>
+        <Component class="javax.swing.JTextField" name="Home_Adrress1_TextBox">
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel6">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Post Code:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="Post_Code_TextBox">
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel7">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Phone Nomber:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel8">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Email Address:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="Phone_Nomber_TextBox">
+        </Component>
+        <Component class="javax.swing.JTextField" name="Email_Address_TextBox">
+        </Component>
+        <Component class="javax.swing.JComboBox" name="Title_ComboBox">
+          <Properties>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="4">
+                <StringItem index="0" value="Item 1"/>
+                <StringItem index="1" value="Item 2"/>
+                <StringItem index="2" value="Item 3"/>
+                <StringItem index="3" value="Item 4"/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Title_ComboBoxActionPerformed"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="vehicles_info_jp">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder title="Vehicle Info"/>
+          </Border>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="Engin_Size_Label" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="Engin_Size_TextBox" max="32767" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="Fuel_Type_Label" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <Component id="Registration_Label" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="Registration_TextBox" min="-2" pref="95" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                                  <Component id="Make_Label" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="Fuel_Type_TextBox" max="32767" attributes="0"/>
+                              <Component id="Make_TextBox" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="Warranty_Label" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="Warranty_ComboBox" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="Renewal_Date_Label" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="Renewal_Date_TextBox" min="-2" pref="91" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Component id="Last_Service_Date_Label" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="Last_Service_Date_TextBox" min="-2" pref="86" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="Colour_Label" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="Colour_TextBox" max="32767" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="Model_Label" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="Model_TextBox" min="-2" pref="103" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                                  <Component id="Type_Label" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="Type_TextBox" min="-2" pref="95" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="Mileage_Label" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="Mileage_TextBox" min="-2" pref="91" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="Registration_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Registration_TextBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Make_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Make_TextBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Model_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Model_TextBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Type_TextBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Type_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="Engin_Size_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Engin_Size_TextBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Fuel_Type_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Fuel_Type_TextBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Colour_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Colour_TextBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Mileage_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Mileage_TextBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="Warranty_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Warranty_ComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Renewal_Date_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Last_Service_Date_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Renewal_Date_TextBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Last_Service_Date_TextBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace pref="22" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="Registration_Label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Registration:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="Registration_TextBox">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Registration_TextBoxActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="Make_Label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Make:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="Make_TextBox">
+        </Component>
+        <Component class="javax.swing.JLabel" name="Model_Label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Model:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="Type_Label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Type:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="Model_TextBox">
+        </Component>
+        <Component class="javax.swing.JTextField" name="Type_TextBox">
+        </Component>
+        <Component class="javax.swing.JLabel" name="Engin_Size_Label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Engin Size:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="Engin_Size_TextBox">
+        </Component>
+        <Component class="javax.swing.JLabel" name="Fuel_Type_Label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Fuel Type:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="Fuel_Type_TextBox">
+        </Component>
+        <Component class="javax.swing.JLabel" name="Colour_Label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Colour:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="Colour_TextBox">
+        </Component>
+        <Component class="javax.swing.JLabel" name="Warranty_Label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Warranty:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="Warranty_ComboBox">
+          <Properties>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="4">
+                <StringItem index="0" value="Item 1"/>
+                <StringItem index="1" value="Item 2"/>
+                <StringItem index="2" value="Item 3"/>
+                <StringItem index="3" value="Item 4"/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Warranty_ComboBoxActionPerformed"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="Renewal_Date_Label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Renewal Date:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="Last_Service_Date_Label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Last Service Date:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="Mileage_Label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Mileage:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="Mileage_TextBox">
+        </Component>
+        <Component class="javax.swing.JTextField" name="Renewal_Date_TextBox">
+        </Component>
+        <Component class="javax.swing.JTextField" name="Last_Service_Date_TextBox">
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

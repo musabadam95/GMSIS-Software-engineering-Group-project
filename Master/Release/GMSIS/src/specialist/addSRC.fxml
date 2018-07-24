@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" minHeight="363.0" minWidth="500.0" prefHeight="363.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="specialist.AddSRCController">
+   <children>
+      <Pane layoutX="260.0" layoutY="-3.0" prefHeight="370.0" prefWidth="498.0" AnchorPane.rightAnchor="450.0">
+         <children>
+            <TextField fx:id="srcIDxx" layoutX="464.0" layoutY="15.0" prefHeight="27.0" prefWidth="19.0" visible="false" />
+         </children></Pane>
+      <Label layoutX="37.0" layoutY="20.0" text="SPCenter Name:" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="20.0" />
+      <TextField fx:id="srcNxx" layoutX="143.0" layoutY="14.0" AnchorPane.leftAnchor="170.0" AnchorPane.rightAnchor="500.0" AnchorPane.topAnchor="17.0" />
+      <Label layoutX="20.0" layoutY="60.0" text="First Line Address:" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="60.0" />
+      <TextField fx:id="firstLineAddxx" layoutX="179.0" layoutY="57.0" AnchorPane.leftAnchor="170.0" AnchorPane.rightAnchor="500.0" AnchorPane.topAnchor="57.0" />
+      <Label layoutX="30.0" layoutY="102.0" text="Second Line Address:" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="100.0" />
+      <TextField fx:id="secLineAddxx" layoutX="236.0" layoutY="99.0" AnchorPane.leftAnchor="170.0" AnchorPane.rightAnchor="500.0" AnchorPane.topAnchor="97.0" />
+      <Label text="County:" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="140.0" />
+      <TextField fx:id="countryxx" AnchorPane.leftAnchor="170.0" AnchorPane.rightAnchor="500.0" AnchorPane.topAnchor="137.0" />
+      <Label text="Post Code:" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="180.0" />
+      <TextField fx:id="postCodexx" AnchorPane.leftAnchor="170.0" AnchorPane.rightAnchor="600.0" AnchorPane.topAnchor="177.0" />
+      <Label text="Phone Number:" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="220.0" />
+      <TextField fx:id="phoneNumberxx" AnchorPane.leftAnchor="170.0" AnchorPane.rightAnchor="600.0" AnchorPane.topAnchor="217.0" />
+      <Label text="Email Adrress:" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="260.0" />
+      <TextField fx:id="emailAddxx" AnchorPane.leftAnchor="170.0" AnchorPane.rightAnchor="600.0" AnchorPane.topAnchor="257.0" />
+      <Button fx:id="srcSaveBt" maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" onAction="#srcSaveBt" prefHeight="40.0" prefWidth="70.0" text="Save" visible="false" AnchorPane.bottomAnchor="75.0" AnchorPane.rightAnchor="475.0" />
+      <Button fx:id="srcEditSaveBt" layoutX="10.0" layoutY="10.0" maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" onAction="#srcEditSaveBt" prefHeight="40.0" prefWidth="70.0" text="Save" visible="false" AnchorPane.bottomAnchor="75.0" AnchorPane.rightAnchor="475.0" />
+      <Button fx:id="srcCancelBt" layoutX="293.0" layoutY="320.0" mnemonicParsing="false" onAction="#srcCancelBt" prefHeight="40.0" prefWidth="70.0" text="Cancel" AnchorPane.bottomAnchor="75.0" AnchorPane.rightAnchor="575.0" />
+   </children>
+   <padding>
+      <Insets bottom="-50.0" right="-450.0" />
+   </padding>
+</AnchorPane>

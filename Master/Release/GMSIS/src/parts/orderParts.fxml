@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="422.0" prefWidth="972.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="parts.OrderPartsController">
+   <children>
+      <TextField fx:id="searchFNameTxt" layoutX="15.0" layoutY="61.0" onKeyTyped="#searchName" prefHeight="25.0" prefWidth="126.0" promptText="Search by First Name" />
+      <Label layoutX="43.0" layoutY="44.0" text="Search by Customer Name" />
+      <Label layoutX="77.0" layoutY="14.0" text="Customer Details">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Separator layoutX="297.0" orientation="VERTICAL" prefHeight="422.0" prefWidth="1.0" />
+      <Label layoutX="15.0" layoutY="130.0" text="First Name :" />
+      <Label layoutX="15.0" layoutY="158.0" text="Last Name :" />
+      <Label layoutX="14.0" layoutY="101.0" text="Customer ID :" />
+      <Label layoutX="80.0" layoutY="296.0" text="Vehicle Details">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Separator layoutX="78.0" layoutY="286.0" prefWidth="200.0" />
+      <Label fx:id="customerIdTxt" layoutX="91.0" layoutY="101.0" prefHeight="17.0" prefWidth="98.0" text="..." />
+      <Label fx:id="firstNameTxt" layoutX="82.0" layoutY="130.0" prefHeight="17.0" prefWidth="98.0" text="..." />
+      <Label fx:id="lastNameTxt" layoutX="81.0" layoutY="158.0" prefHeight="17.0" prefWidth="98.0" text="..." />
+      <Label layoutX="15.0" layoutY="185.0" text="Bill:" />
+      <Label fx:id="bookingBillTxt" layoutX="37.0" layoutY="185.0" prefHeight="17.0" prefWidth="98.0" text="..." />
+      <Label layoutX="16.0" layoutY="348.0" text="Vehicle Type :" />
+      <Label layoutX="16.0" layoutY="376.0" text="Vehicle Registartion :" />
+      <Label layoutX="15.0" layoutY="319.0" text="Vehicle :" />
+      <Label fx:id="VehicleTxt" layoutX="62.0" layoutY="319.0" prefHeight="17.0" prefWidth="98.0" text="..." />
+      <Label fx:id="vehicleTypeTxt" layoutX="91.0" layoutY="348.0" prefHeight="17.0" prefWidth="98.0" text="..." />
+      <Label fx:id="vehRegTxt" layoutX="130.0" layoutY="376.0" prefHeight="17.0" prefWidth="98.0" text="..." />
+      <TableView fx:id="bookPartList" layoutX="300.0" layoutY="17.0" onMouseClicked="#partDetails" prefHeight="200.0" prefWidth="645.0">
+        <columns>
+          <TableColumn fx:id="colPartId" prefWidth="61.333343505859375" text="PartID" />
+          <TableColumn fx:id="colPartName" prefWidth="98.66665649414062" text="Part Name" />
+            <TableColumn fx:id="colCost" prefWidth="81.66668701171875" text="Cost" />
+            <TableColumn fx:id="colDateInstal" prefWidth="175.0" text="Date Installed" />
+            <TableColumn fx:id="colWarranty" prefWidth="155.33331298828125" text="Warranty Exp" />
+            <TableColumn fx:id="colSPC" prefWidth="78.66668701171875" text="SPC?" />
+        </columns>
+         <effect>
+            <Blend />
+         </effect>
+      </TableView>
+      <ComboBox fx:id="partListDropDown" layoutX="433.0" layoutY="247.0" onAction="#selectPart" prefHeight="25.0" prefWidth="150.0" promptText="Search/Select Part" />
+      <ComboBox fx:id="foundNamesList" layoutX="153.0" layoutY="61.0" onAction="#fillCustomerData" prefHeight="25.0" prefWidth="141.0" promptText="Select Customer" />
+      <ComboBox fx:id="bookedTimeDateDropDown" layoutX="144.0" layoutY="135.0" onAction="#fillBookingData" prefHeight="25.0" prefWidth="150.0" promptText="Select Booking Time" />
+      <Label layoutX="15.0" layoutY="235.0" text="Booked Time:" />
+      <Label fx:id="bookedTimeTxt" layoutX="91.0" layoutY="235.0" prefHeight="17.0" prefWidth="98.0" text="..." />
+      <Label layoutX="15.0" layoutY="262.0" text="Booked Date:" />
+      <Label fx:id="bookedDateTxt" layoutX="89.0" layoutY="262.0" prefHeight="17.0" prefWidth="98.0" text="..." />
+      <Label layoutX="15.0" layoutY="209.0" text="Booking ID:" />
+      <Label fx:id="bookedIDTxt" layoutX="84.0" layoutY="210.0" prefHeight="17.0" prefWidth="98.0" text="..." />
+      <Button fx:id="addPrtBtn" layoutX="627.0" layoutY="259.0" mnemonicParsing="false" onAction="#addPart" prefHeight="25.0" prefWidth="51.0" text="Add" />
+      <Button fx:id="deletePrtBtn" layoutX="627.0" layoutY="295.0" mnemonicParsing="false" onAction="#deletePart" prefHeight="25.0" prefWidth="51.0" text="Delete">
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </Button>
+      <Button fx:id="changePrtBtn" layoutX="627.0" layoutY="330.0" mnemonicParsing="false" onAction="#editPart" prefHeight="25.0" prefWidth="51.0" text="Edit" />
+      <Label layoutX="313.0" layoutY="288.0" text="Part Name:" />
+      <Label layoutX="313.0" layoutY="334.0" text="Description:" />
+      <Label layoutX="313.0" layoutY="311.0" text="Cost:" />
+      <Separator layoutX="299.0" layoutY="304.0" opacity="0.57" prefWidth="200.0" />
+      <Separator layoutX="299.0" layoutY="330.0" opacity="0.57" prefWidth="200.0" />
+      <Label fx:id="descTxt" layoutX="383.0" layoutY="307.0" prefHeight="72.0" prefWidth="200.0" wrapText="true" />
+      <Label fx:id="costTxt" layoutX="340.0" layoutY="312.0" prefHeight="17.0" prefWidth="36.0" />
+      <Label fx:id="partNmTxt" layoutX="374.0" layoutY="289.0" prefHeight="17.0" prefWidth="36.0" />
+      <Button fx:id="refreshBtn" layoutX="627.0" layoutY="364.0" mnemonicParsing="false" onAction="#refreshAll" prefHeight="25.0" prefWidth="51.0" text="Refresh" wrapText="true">
+         <effect>
+            <ColorAdjust />
+         </effect>
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="vehicleRegDropDown" layoutX="145.0" layoutY="97.0" onAction="#fillVehicleData" prefHeight="25.0" prefWidth="150.0" promptText="Select Vehicle Reg" />
+      <TextField fx:id="searchPartTxt" layoutX="322.0" layoutY="247.0" onKeyTyped="#filterPart" prefHeight="25.0" prefWidth="111.0" promptText="Search Part --&gt;" />
+      <Label layoutX="688.0" layoutY="252.0" text="Part Name:" />
+      <Label layoutX="688.0" layoutY="298.0" text="Description:" />
+      <Label layoutX="688.0" layoutY="275.0" text="Cost:" />
+      <Label fx:id="usedDescTxt" layoutX="758.0" layoutY="271.0" prefHeight="72.0" prefWidth="200.0" wrapText="true" />
+      <Label fx:id="usedCostTxt" layoutX="715.0" layoutY="276.0" prefHeight="17.0" prefWidth="36.0" />
+      <Label fx:id="usedPartNmTxt" layoutX="749.0" layoutY="253.0" prefHeight="17.0" prefWidth="36.0" />
+      <Label layoutX="688.0" layoutY="339.0" text="Date Installed:" wrapText="true" />
+      <Label fx:id="usedPartNmTxt1" layoutX="749.0" layoutY="340.0" prefHeight="17.0" prefWidth="36.0" />
+      <Label layoutX="688.0" layoutY="368.0" text="Warranty Exp:" wrapText="true" />
+      <Label fx:id="dateInstalledTxt" layoutX="767.0" layoutY="340.0" prefHeight="17.0" prefWidth="171.0" />
+      <Label fx:id="warrantyTxt" layoutX="767.0" layoutY="368.0" prefHeight="17.0" prefWidth="171.0" />
+   </children>
+</AnchorPane>

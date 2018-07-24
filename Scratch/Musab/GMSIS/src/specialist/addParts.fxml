@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="specialist.AddPartsController">
+   <children>
+      <Text layoutX="53.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" />
+      <Text layoutX="53.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Part Name" />
+      <Text layoutX="53.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Part ID" />
+      <Text layoutX="53.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Expected Return" />
+      <TextField fx:id="part_name_txt" layoutX="182.0" layoutY="39.0" onAction="#part_name_txt" prefHeight="27.0" prefWidth="374.0" />
+      <TextField fx:id="part_id_txt" layoutX="182.0" layoutY="77.0" onAction="#part_id_txt" prefHeight="27.0" prefWidth="374.0" />
+      <TextField fx:id="exp_return_txt" layoutX="182.0" layoutY="115.0" onAction="#exp_return_txt" prefHeight="27.0" prefWidth="374.0" />
+      <TextArea layoutX="182.0" layoutY="170.0" prefHeight="158.0" prefWidth="374.0" />
+      <Button fx:id="cancel_bt" layoutX="24.0" layoutY="351.0" mnemonicParsing="false" onAction="#cancel_bt" text="Cancel" />
+      <Button fx:id="add_part_bt" layoutX="527.0" layoutY="351.0" mnemonicParsing="false" onAction="#add_part_bt" text="Save" />
+   </children>
+</AnchorPane>

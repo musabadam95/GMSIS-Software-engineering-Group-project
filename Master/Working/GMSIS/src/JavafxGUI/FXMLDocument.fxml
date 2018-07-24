@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="599.0" prefWidth="940.0" stylesheets="@FXMLDocument.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavafxGUI.FXMLDocumentController">
+    <children>
+      <TabPane fx:id="Tabs" layoutY="35.0" rotateGraphic="true" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="35.0">
+        <tabs>
+          <Tab fx:id="loginTab" text="Login">
+            <content>
+              <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                     <children>
+                        <AnchorPane id="AnchorPane" layoutX="167.0" layoutY="11.0" prefHeight="449.0" prefWidth="617.0" AnchorPane.bottomAnchor="11.0" AnchorPane.leftAnchor="167.0" AnchorPane.rightAnchor="167.0" AnchorPane.topAnchor="11.0">
+                           <children>
+                              <Label fx:id="output" layoutX="207.0" layoutY="57.0" prefHeight="59.0" prefWidth="193.0" text="Status: Waiting for Login" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="23.0" layoutY="145.0" text="User ID" wrapText="true" />
+                              <Label layoutX="14.0" layoutY="180.0" text="Password" wrapText="true" />
+                              <Button fx:id="loginBtn" layoutX="231.0" layoutY="164.0" mnemonicParsing="false" onAction="#onButtonClick" styleClass="button" stylesheets="@FXMLDocument.css/" text="login" />
+                              <TextField fx:id="usernameTxt" layoutX="67.0" layoutY="141.0" />
+                              <PasswordField fx:id="passwordTxt" layoutX="67.0" layoutY="176.0" onAction="#onButtonClick" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab fx:id="sPTab" disable="true" text="Specialist Repairs">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <fx:include source="../specialist/SRCMain.fxml" />
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="customerTab" disable="true" text="Customer Account">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <fx:include source="../Customer/CustomerGUI.fxml" />
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="bookingTab" disable="true" text="Bookings">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <fx:include source="../Booking/Bookings.fxml" />
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="adminTab" disable="true" text="Admin">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <fx:include source="Admin.fxml" />
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="orderPartTab" disable="true" text="Order Parts">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <fx:include source="../parts/orderParts.fxml" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+          <Tab fx:id="stockTab" disable="true" text="Stock">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <fx:include source="../parts/partsGUI.fxml" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab fx:id="vehicleTab" disable="true" text="Vehicles">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <fx:include source="../vehicles/Vehicles.fxml" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Button fx:id="logOutBtn" disable="true" layoutX="163.0" layoutY="7.0" mnemonicParsing="false" onAction="#logOut" text="Log Out" />
+      <Label fx:id="currentUserName" layoutX="14.0" layoutY="11.0" text="Please Login" />
+    </children>
+</AnchorPane>

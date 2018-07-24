@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="719.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vehicles.VehiclePopUpController">
+   <children>
+      <Label layoutX="85.0" layoutY="89.0" text="Type:" />
+      <Label layoutX="46.0" layoutY="140.0" text="Vehicle Registration:" />
+      <Label layoutX="58.0" layoutY="183.0" text="Model:" />
+      <Label layoutX="46.0" layoutY="229.0" text="Make:" />
+      <Label layoutX="42.0" layoutY="273.0" text="Engine Size:" />
+      <Label layoutX="366.0" layoutY="97.0" text="Fuel Type:" />
+      <Label layoutX="371.0" layoutY="140.0" text="Colour:" />
+      <Label layoutX="353.0" layoutY="183.0" text="MOT Renewal Date:" />
+      <Label layoutX="353.0" layoutY="229.0" text="Last Service Date" />
+      <Button fx:id="doneBtn" layoutX="508.0" layoutY="382.0" mnemonicParsing="false" onAction="#editVehicle" text="Done" />
+      <Button fx:id="cancelBtn" layoutX="594.0" layoutY="382.0" mnemonicParsing="false" text="Cancel" />
+      <TextField fx:id="typeField" layoutX="156.0" layoutY="84.0" />
+      <TextField fx:id="vehRegField" layoutX="156.0" layoutY="127.0" />
+      <TextField fx:id="modField" layoutX="156.0" layoutY="170.0" />
+      <TextField fx:id="makeField" layoutX="156.0" layoutY="224.0" />
+      <TextField fx:id="engSizeField" layoutX="156.0" layoutY="268.0" />
+      <TextField fx:id="fuelTypeField" layoutX="446.0" layoutY="92.0" />
+      <TextField fx:id="colourField" layoutX="446.0" layoutY="135.0" />
+      <Label layoutX="363.0" layoutY="273.0" text="Current Mileage:" />
+      <TextField fx:id="mileField" layoutX="483.0" layoutY="268.0" />
+      <ComboBox fx:id="templateDropdown" layoutX="164.0" layoutY="31.0" prefHeight="31.0" prefWidth="536.0" />
+      <Label layoutX="42.0" layoutY="36.0" text="Choose template:" />
+      <Label layoutX="52.0" layoutY="372.0" text="Warranty End Date:" />
+      <Label layoutX="52.0" layoutY="333.0" text="Warranty Name:" />
+      <TextField fx:id="wNameField" layoutX="166.0" layoutY="328.0" />
+      <Label layoutX="334.0" layoutY="307.0" text="Warranty Address:" />
+      <TextField fx:id="wAddField" layoutX="483.0" layoutY="302.0" />
+      <DatePicker fx:id="motDate" layoutX="446.0" layoutY="178.0" />
+      <DatePicker fx:id="lsdDate" layoutX="462.0" layoutY="224.0" />
+      <DatePicker fx:id="wEndDate" layoutX="164.0" layoutY="367.0" />
+      <ComboBox fx:id="customerDropdown" layoutX="496.0" layoutY="339.0" prefWidth="150.0" />
+      <Label layoutX="357.0" layoutY="344.0" text="Customer ID:" />
+   </children>
+</Pane>
